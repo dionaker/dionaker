@@ -14,22 +14,23 @@
       .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 3px; }
       .body { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
       .title { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 8px; }
-      @keyframes cardIn { from { opacity: 0; transform: translateX(-42px); } to { opacity: 1; transform: translateX(0); } }
-      @keyframes titleIn { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      
       @keyframes shine { 0%, 30% { transform: translateX(-220px) skewX(-18deg); opacity: 0; } 42% { opacity: .8; } 65%,100% { transform: translateX(520px) skewX(-18deg); opacity: 0; } }
       @keyframes xpFill { from { width: 0; } to { width: 235px; } }
-      @keyframes trophyBounce { 0%,100% { transform: translateY(0); } 12% { transform: translateY(-12px); } 22% { transform: translateY(0); } }
+      @keyframes trophyPulse { 0%,100% { opacity: .9; } 50% { opacity: 1; } }
       @keyframes drift { 0%,100% { transform: translate(0,0); opacity: .6; } 50% { transform: translate(12px,-12px); opacity: 1; } }
       @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
-      .playerCard { animation: cardIn .8s .2s cubic-bezier(.2,.8,.2,1) both; }
-      .heroTitle { animation: titleIn .75s .42s cubic-bezier(.2,.8,.2,1) both; transform-box: fill-box; transform-origin: center; }
+      .playerCard { animation: fadeIn .8s .2s cubic-bezier(.2,.8,.2,1) both; }
+      .heroTitle { animation: fadeIn .75s .42s cubic-bezier(.2,.8,.2,1) both; }
       .shine { animation: shine 5.8s 1.1s ease-in-out infinite; }
       .xpBar { animation: xpFill 1.5s .9s cubic-bezier(.2,.8,.2,1) both; }
-      .trophy { animation: trophyBounce 3.8s 1.3s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+      .trophy { animation: trophyPulse 3.8s 1.3s ease-in-out infinite; }
       .drift { animation: drift 7s ease-in-out infinite; }
       .pulse { animation: pulse 2.4s ease-in-out infinite; }
     </style>
   </defs>
+
 
   <rect width="1000" height="560" rx="38" fill="url(#bg)"/>
   <g opacity=".16" stroke="#6FD8FF" stroke-width="1"><path d="M0 110H1000M0 220H1000M0 330H1000M0 440H1000"/><path d="M100 0V560M250 0V560M400 0V560M550 0V560M700 0V560M850 0V560"/></g>
@@ -38,16 +39,19 @@
   <rect x="35" y="35" width="930" height="490" rx="34" fill="#0D2148" fill-opacity=".72" stroke="#548ED0" stroke-width="2"/>
   <rect x="52" y="52" width="896" height="456" rx="24" stroke="#85DFFF" stroke-opacity=".18"/>
 
+
   <g clip-path="url(#frameClip)">
     <path d="M54 404H946" stroke="#75DFFF" stroke-opacity=".2" stroke-dasharray="4 15"/>
     <path d="M54 128H284" stroke="#75DFFF" stroke-opacity=".2" stroke-dasharray="4 15"/>
     <rect class="shine" x="300" y="80" width="36" height="350" fill="#FFF" opacity="0"/>
   </g>
 
+
   <g class="drift"><circle cx="91" cy="100" r="17" fill="url(#gold)" stroke="#FFF1A5" stroke-width="3"/><path d="M91 89L95 97L103 98L97 104L98 112L91 108L84 112L85 104L79 98L87 97L91 89Z" fill="#FFF8B8"/></g>
   <g class="drift" style="animation-delay:1.6s"><circle cx="910" cy="444" r="17" fill="url(#gold)" stroke="#FFF1A5" stroke-width="3"/><path d="M910 433L914 441L922 442L916 448L917 456L910 452L903 456L904 448L898 442L906 441L910 433Z" fill="#FFF8B8"/></g>
   <circle class="pulse" cx="902" cy="100" r="5" fill="#6EF4FF" filter="url(#smallGlow)"/>
   <circle class="pulse" cx="107" cy="430" r="5" fill="#FFCA45" filter="url(#smallGlow)"/>
+
 
   <g class="playerCard" transform="translate(85 150)">
     <rect width="240" height="295" rx="26" fill="url(#card)" stroke="#68CFFF" stroke-width="2"/>
@@ -61,29 +65,10 @@
     <text font-family="DejaVu Sans" x="120" y="266" text-anchor="middle" class="body" font-size="18" fill="#78EEFF">ETEC / AMS</text>
   </g>
 
+
   <g class="heroTitle" transform="translate(340 125)">
     <text font-family="DejaVu Sans" x="295" y="0" text-anchor="middle" class="label" font-size="18" fill="#75F1FF">PLAYER 001</text>
     <text font-family="DejaVu Sans" x="295" y="105" text-anchor="middle" class="title" font-size="72" fill="url(#coral)">GIOVANNI</text>
     <text font-family="DejaVu Sans" x="295" y="153" text-anchor="middle" class="body" font-size="25" fill="#F7FAFF">STUDENT / DEVELOPER</text>
     <rect x="45" y="190" width="500" height="76" rx="38" fill="#081832" stroke="#FFB543" stroke-width="2"/>
     <circle cx="79" cy="228" r="10" fill="#65F4A5" filter="url(#smallGlow)"/>
-    <text font-family="DejaVu Sans" x="111" y="219" class="label" font-size="15" fill="#FFCF4C">CURRENT CLASS</text>
-    <text font-family="DejaVu Sans" x="111" y="247" class="body" font-size="22" fill="#FFFFFF">GAME DEV ROOKIE</text>
-  </g>
-
-  <g transform="translate(365 422)">
-    <text font-family="DejaVu Sans" x="0" y="0" class="label" font-size="15" fill="#75F1FF">NEXT QUEST</text>
-    <text font-family="DejaVu Sans" x="0" y="31" class="body" font-size="22" fill="#FFFFFF">BUILD THE FIRST GAME</text>
-  </g>
-
-  <g class="trophy" transform="translate(795 170)">
-    <path d="M65 0V34M37 10H93V55C93 84 37 84 37 55V10Z" fill="url(#gold)" stroke="#FFF3AD" stroke-width="4"/>
-    <path d="M37 21H17C17 58 36 66 45 55M93 21H113C113 58 94 66 85 55" stroke="#FFCF4C" stroke-width="8" stroke-linecap="round"/>
-    <rect x="57" y="82" width="16" height="26" rx="3" fill="#FFB52E"/><rect x="40" y="108" width="50" height="11" rx="5" fill="#FFE36E"/>
-    <text font-family="DejaVu Sans" x="65" y="157" text-anchor="middle" class="label" font-size="15" fill="#FFF1A0">DEVELOPER XP</text>
-    <rect x="-55" y="179" width="240" height="18" rx="9" fill="#07142C" stroke="#345F96"/>
-    <rect class="xpBar" x="-55" y="179" width="0" height="18" rx="9" fill="url(#gold)" filter="url(#smallGlow)"/>
-    <text font-family="DejaVu Sans" x="65" y="238" text-anchor="middle" class="label" font-size="15" fill="#75F1FF">NEXT LEVEL</text>
-    <text font-family="DejaVu Sans" x="65" y="267" text-anchor="middle" class="body" font-size="22" fill="#FFFFFF">GAME DEVELOPMENT</text>
-  </g>
-</svg>
