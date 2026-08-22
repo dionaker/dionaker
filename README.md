@@ -1,21 +1,33 @@
 <div align="center">
-  <img src="./assets/developer-arena.svg?v=b3d88ad" alt="Giovanni Developer Arena" width="100%" />
+  <img src="./assets/developer-arena-fixed.svg?v=dd81045" alt="Giovanni Developer Arena" width="100%" />
 </div>
+
+
 
 
 <br />
 
 
+
+
 ## > PLAYER PROFILE
+
+
 
 
 Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em formação. Estou construindo minha base em desenvolvimento web com **HTML e CSS**, evoluindo em **Java e JavaScript** e explorando o caminho até o **desenvolvimento de jogos**.
 
 
+
+
 > **Status:** aprendendo construindo. Cada projeto é uma nova partida; cada habilidade desbloqueada abre o próximo caminho.
 
 
+
+
 ## > SKILL TREE
+
+
 
 
 <div align="center">
@@ -23,7 +35,11 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 </div>
 
 
+
+
 ## > LOADOUT
+
+
 
 
 <div align="center">
@@ -31,7 +47,11 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 </div>
 
 
+
+
 ## > CURRENT QUESTS
+
+
 
 
 <div align="center">
@@ -39,7 +59,11 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 </div>
 
 
+
+
 ## > NEXT LEVEL
+
+
 
 
 <div align="center">
@@ -47,7 +71,11 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 </div>
 
 
+
+
 ## > PLAYER STATS
+
+
 
 
 <div align="center">
@@ -57,13 +85,12 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 </div>
 
 
+
+
 <br />
+
+
 
 
 <div align="center">
   <sub>Developer Arena / ETEC / AMS / Building the skill tree, one level at a time.</sub>
-</div>
-
-
-<!-- README de perfil personalizado para dionaker. -->
-
