@@ -1,0 +1,64 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Giovanni current quests</title>
+  <desc id="desc">Painel de missões atuais de Giovanni: tornar-se desenvolvedor de jogos, melhorar Java e JavaScript e construir projetos web.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1D3D"/><stop offset="1" stop-color="#21133F"/></linearGradient>
+    <linearGradient id="main" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFDE67"/><stop offset="1" stop-color="#FF7D66"/></linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#67F3FF"/><stop offset="1" stop-color="#587BFF"/></linearGradient>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 3px; }
+      .title { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 2px; }
+      .meta { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
+      @keyframes beacon { 0%,100% { opacity: .6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.16); } }
+      @keyframes progress { from { width: 0; } to { width: 490px; } }
+      @keyframes sweep { from { transform: translateX(-180px); opacity: 0; } 20% { opacity: .35; } 80%,to { transform: translateX(1080px); opacity: 0; } }
+      .beacon { animation: beacon 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .mainProgress { animation: progress 1.4s .4s cubic-bezier(.2,.8,.2,1) both; }
+      .sweep { animation: sweep 6s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" rx="32" fill="url(#bg)" stroke="#4776B8" stroke-width="2"/>
+  <g opacity=".13" stroke="#74DFFF"><path d="M40 90H920M40 180H920M40 270H920M40 360H920M40 450H920"/><path d="M160 0V540M320 0V540M480 0V540M640 0V540M800 0V540"/></g>
+  <text font-family="DejaVu Sans" x="45" y="50" class="label" font-size="21" fill="#F7FAFF">CURRENT QUESTS</text>
+  <text font-family="DejaVu Sans" x="915" y="50" text-anchor="end" class="meta" font-size="14" fill="#75F1FF">MISSION BOARD / ACTIVE</text>
+
+  <g transform="translate(45 85)">
+    <rect width="870" height="174" rx="26" fill="#302042" stroke="url(#main)" stroke-width="3"/>
+    <circle class="beacon" cx="54" cy="54" r="21" fill="url(#main)" filter="url(#glow)"/>
+    <path d="M54 38L59 49L71 50L62 58L65 70L54 64L43 70L46 58L37 50L49 49L54 38Z" fill="#FFF5B1"/>
+    <text font-family="DejaVu Sans" x="96" y="47" class="label" font-size="15" fill="#FFDD62">MAIN QUEST</text>
+    <text font-family="DejaVu Sans" x="96" y="87" class="title" font-size="30" fill="#FFFFFF">BECOME A GAME DEVELOPER</text>
+    <text font-family="DejaVu Sans" x="96" y="120" class="meta" font-size="16" fill="#FFB67E">BUILD MY FIRST GAME</text>
+    <rect x="96" y="143" width="680" height="13" rx="6.5" fill="#13152D" stroke="#6E4A6B"/>
+    <rect class="mainProgress" x="96" y="143" width="0" height="13" rx="6.5" fill="url(#main)" filter="url(#glow)"/>
+    <text font-family="DejaVu Sans" x="794" y="155" class="meta" font-size="12" fill="#FFDF8A">IN PROGRESS</text>
+  </g>
+
+  <text font-family="DejaVu Sans" x="45" y="302" class="label" font-size="15" fill="#75F1FF">SIDE QUESTS</text>
+  <g transform="translate(45 326)">
+    <rect width="270" height="142" rx="22" fill="#14284F" stroke="url(#side)" stroke-width="2"/>
+    <circle cx="34" cy="37" r="10" fill="#65F4A5" filter="url(#glow)"/>
+    <text font-family="DejaVu Sans" x="58" y="44" class="title" font-size="21" fill="#FFFFFF">IMPROVE JAVA</text>
+    <path d="M28 78H242" stroke="#4E729E" stroke-width="7" stroke-linecap="round"/><path d="M28 78H115" stroke="#FF6C88" stroke-width="7" stroke-linecap="round"/>
+    <text font-family="DejaVu Sans" x="28" y="111" class="meta" font-size="14" fill="#FF9EAF">LEVEL 01 / LEARNING</text>
+  </g>
+
+  <g transform="translate(345 326)">
+    <rect width="270" height="142" rx="22" fill="#14284F" stroke="url(#side)" stroke-width="2"/>
+    <circle cx="34" cy="37" r="10" fill="#65F4A5" filter="url(#glow)"/>
+    <text font-family="DejaVu Sans" x="58" y="44" class="title" font-size="21" fill="#FFFFFF">IMPROVE JS</text>
+    <path d="M28 78H242" stroke="#4E729E" stroke-width="7" stroke-linecap="round"/><path d="M28 78H92" stroke="#FFCF4C" stroke-width="7" stroke-linecap="round"/>
+    <text font-family="DejaVu Sans" x="28" y="111" class="meta" font-size="14" fill="#FFE28A">LEVEL 01 / LEARNING</text>
+  </g>
+
+  <g transform="translate(645 326)">
+    <rect width="270" height="142" rx="22" fill="#14284F" stroke="url(#side)" stroke-width="2"/>
+    <circle cx="34" cy="37" r="10" fill="#65F4A5" filter="url(#glow)"/>
+    <text font-family="DejaVu Sans" x="58" y="44" class="title" font-size="21" fill="#FFFFFF">BUILD WEB PROJECTS</text>
+    <path d="M28 78H242" stroke="#4E729E" stroke-width="7" stroke-linecap="round"/><path d="M28 78H148" stroke="#69F3FF" stroke-width="7" stroke-linecap="round"/>
+    <text font-family="DejaVu Sans" x="28" y="111" class="meta" font-size="14" fill="#79F3FF">ACTIVE / PRACTICING</text>
+  </g>
+  <path class="sweep" d="M0 326H160V470H0Z" fill="url(#side)" opacity=".11" transform="skewX(-18)"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg width="960" height="360" viewBox="0 0 960 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Giovanni loadout</title>
+  <desc id="desc">Loadout de tecnologias de Giovanni: HTML, CSS, JavaScript e Java equipados, com dois slots bloqueados para futuras habilidades.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1D3D"/><stop offset="1" stop-color="#21133F"/></linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB35F"/><stop offset="1" stop-color="#FF5C7E"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6BF3FF"/><stop offset="1" stop-color="#4C9BFF"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF19B"/><stop offset="1" stop-color="#F5A52E"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 3px; }
+      .title { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 2px; }
+      .meta { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
+      @keyframes slotPulse { 0%,100% { opacity: .8; } 50% { opacity: 1; } }
+      @keyframes lockedPulse { 0%,100% { opacity: .3; } 50% { opacity: .6; } }
+      @keyframes scan { from { transform: translateX(-180px); opacity: 0; } 20% { opacity: .4; } 80%,to { transform: translateX(1050px); opacity: 0; } }
+      .equipped { animation: slotPulse 3.5s ease-in-out infinite; }
+      .locked { animation: lockedPulse 3.5s ease-in-out infinite; }
+      .scan { animation: scan 6s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="960" height="360" rx="32" fill="url(#bg)" stroke="#4776B8" stroke-width="2"/>
+  <g opacity=".13" stroke="#74DFFF"><path d="M38 90H922M38 180H922M38 270H922"/><path d="M160 0V360M320 0V360M480 0V360M640 0V360M800 0V360"/></g>
+  <text font-family="DejaVu Sans" x="45" y="48" class="label" font-size="21" fill="#F7FAFF">LOADOUT / EQUIPPED SKILLS</text>
+  <text font-family="DejaVu Sans" x="915" y="48" text-anchor="end" class="meta" font-size="14" fill="#75F1FF">4 / 6 SLOTS EQUIPPED</text>
+  <path class="scan" d="M0 78H170V294H0Z" fill="url(#cyan)" opacity=".12" transform="skewX(-18)"/>
+
+  <g class="equipped" transform="translate(45 90)">
+    <rect width="135" height="185" rx="22" fill="#182D5A" stroke="url(#coral)" stroke-width="3"/>
+    <rect x="30" y="22" width="75" height="75" rx="20" fill="#FF8F56"/><text font-family="DejaVu Sans" x="67.5" y="78" text-anchor="middle" class="title" font-size="28" fill="#2C1739">H5</text>
+    <text font-family="DejaVu Sans" x="67.5" y="128" text-anchor="middle" class="title" font-size="18" fill="#FFFFFF">HTML</text>
+    <text font-family="DejaVu Sans" x="67.5" y="157" text-anchor="middle" class="meta" font-size="13" fill="#FFB37F">LV. 03</text>
+    <text font-family="DejaVu Sans" x="67.5" y="177" text-anchor="middle" class="meta" font-size="10" fill="#FFE09B">PRACTICING</text>
+  </g>
+
+  <g class="equipped" style="animation-delay:.5s" transform="translate(195 90)">
+    <rect width="135" height="185" rx="22" fill="#182D5A" stroke="url(#cyan)" stroke-width="3"/>
+    <rect x="30" y="22" width="75" height="75" rx="20" fill="#628EFF"/><text font-family="DejaVu Sans" x="67.5" y="78" text-anchor="middle" class="title" font-size="27" fill="#F7FAFF">CSS</text>
+    <text font-family="DejaVu Sans" x="67.5" y="128" text-anchor="middle" class="title" font-size="18" fill="#FFFFFF">CSS</text>
+    <text font-family="DejaVu Sans" x="67.5" y="157" text-anchor="middle" class="meta" font-size="13" fill="#A9C6FF">LV. 02</text>
+    <text font-family="DejaVu Sans" x="67.5" y="177" text-anchor="middle" class="meta" font-size="10" fill="#A9C6FF">LEARNING</text>
+  </g>
+
+  <g class="equipped" style="animation-delay:1s" transform="translate(345 90)">
+    <rect width="135" height="185" rx="22" fill="#182D5A" stroke="url(#gold)" stroke-width="3"/>
+    <rect x="30" y="22" width="75" height="75" rx="20" fill="#FFE064"/><text font-family="DejaVu Sans" x="67.5" y="78" text-anchor="middle" class="title" font-size="24" fill="#3F3015">JS</text>
+    <text font-family="DejaVu Sans" x="67.5" y="128" text-anchor="middle" class="title" font-size="18" fill="#FFFFFF">JS</text>
+    <text font-family="DejaVu Sans" x="67.5" y="157" text-anchor="middle" class="meta" font-size="13" fill="#FFE88B">LV. 01</text>
+    <text font-family="DejaVu Sans" x="67.5" y="177" text-anchor="middle" class="meta" font-size="10" fill="#FFE88B">LEARNING</text>
+  </g>
+
+  <g class="equipped" style="animation-delay:1.5s" transform="translate(495 90)">
+    <rect width="135" height="185" rx="22" fill="#182D5A" stroke="#FF637E" stroke-width="3"/>
+    <rect x="30" y="22" width="75" height="75" rx="20" fill="#FF617D"/><text font-family="DejaVu Sans" x="67.5" y="78" text-anchor="middle" class="title" font-size="29" fill="#38152E">J</text>
+    <text font-family="DejaVu Sans" x="67.5" y="128" text-anchor="middle" class="title" font-size="18" fill="#FFFFFF">JAVA</text>
+    <text font-family="DejaVu Sans" x="67.5" y="157" text-anchor="middle" class="meta" font-size="13" fill="#FF9BAE">LV. 01</text>
+    <text font-family="DejaVu Sans" x="67.5" y="177" text-anchor="middle" class="meta" font-size="10" fill="#FF9BAE">LEARNING</text>
+  </g>
+
+  <g class="locked" transform="translate(645 90)">
+    <rect width="135" height="185" rx="22" fill="#0D1934" stroke="#536B91" stroke-width="2" stroke-dasharray="7 6"/>
+    <path d="M53 65V54C53 38 82 38 82 54V65" stroke="#8396B7" stroke-width="7" stroke-linecap="round"/><rect x="44" y="62" width="47" height="40" rx="9" fill="#536B91"/>
+    <text font-family="DejaVu Sans" x="67.5" y="136" text-anchor="middle" class="title" font-size="17" fill="#A4B5D0">LOCKED</text>
+    <text font-family="DejaVu Sans" x="67.5" y="166" text-anchor="middle" class="meta" font-size="12" fill="#7D91B3">NEXT SKILL</text>
+  </g>
+
+  <g class="locked" style="animation-delay:1.2s" transform="translate(795 90)">
+    <rect width="135" height="185" rx="22" fill="#0D1934" stroke="#536B91" stroke-width="2" stroke-dasharray="7 6"/>
+    <path d="M53 65V54C53 38 82 38 82 54V65" stroke="#8396B7" stroke-width="7" stroke-linecap="round"/><rect x="44" y="62" width="47" height="40" rx="9" fill="#536B91"/>
+    <text font-family="DejaVu Sans" x="67.5" y="136" text-anchor="middle" class="title" font-size="17" fill="#A4B5D0">LOCKED</text>
+    <text font-family="DejaVu Sans" x="67.5" y="166" text-anchor="middle" class="meta" font-size="12" fill="#7D91B3">FUTURE SLOT</text>
+  </g>
+</svg>

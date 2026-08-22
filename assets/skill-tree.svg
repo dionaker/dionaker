@@ -1,0 +1,77 @@
+<svg width="960" height="660" viewBox="0 0 960 660" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Giovanni skill tree</title>
+  <desc id="desc">Árvore de habilidades de Giovanni: HTML em prática, CSS e JavaScript em aprendizado, Java em aprendizado e desenvolvimento de jogos como próxima missão.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="660" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1D3D"/><stop offset="1" stop-color="#1B123B"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF09A"/><stop offset="1" stop-color="#F59C2F"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#67F3FF"/><stop offset="1" stop-color="#4B91FF"/></linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB06A"/><stop offset="1" stop-color="#FF5D82"/></linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 3px; }
+      .nodeTitle { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 2px; }
+      .nodeMeta { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
+      @keyframes lineFlow { to { stroke-dashoffset: -28; } }
+      @keyframes nodePulse { 0%,100% { opacity: .72; } 50% { opacity: 1; } }
+      @keyframes unlock { 0%,35% { opacity: .25; } 50%,100% { opacity: 1; } }
+      .path { stroke-dasharray: 7 12; animation: lineFlow 4.5s linear infinite; }
+      .pulse { animation: nodePulse 2.8s ease-in-out infinite; }
+      .unlock { animation: unlock 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="960" height="660" rx="32" fill="url(#bg)" stroke="#4776B8" stroke-width="2"/>
+  <g opacity=".13" stroke="#74DFFF"><path d="M42 92H918M42 190H918M42 288H918M42 386H918M42 484H918M42 582H918"/><path d="M120 0V660M280 0V660M440 0V660M600 0V660M760 0V660M920 0V660"/></g>
+  <text font-family="DejaVu Sans" x="48" y="48" class="label" font-size="20" fill="#F7FAFF">SKILL TREE / ABILITIES</text>
+  <text font-family="DejaVu Sans" x="912" y="48" text-anchor="end" class="nodeMeta" font-size="13" fill="#75F1FF">BUILDING THE PATH</text>
+
+  <g class="path" stroke="#5FCEEF" stroke-width="5" fill="none" stroke-linecap="round"><path d="M480 169V218"/><path d="M480 328V365"/><path d="M480 365H230V410"/><path d="M480 365H730V410"/><path d="M230 520V560"/><path d="M730 520V560"/><path d="M730 560H590V598"/><path d="M730 560H870V598"/></g>
+  <circle class="pulse" cx="480" cy="365" r="6" fill="#67F3FF" filter="url(#glow)"/>
+
+  <g transform="translate(340 78)">
+    <rect width="280" height="92" rx="26" fill="#172A55" stroke="#FFCA45" stroke-width="3"/>
+    <circle cx="44" cy="46" r="18" fill="url(#gold)"/><path d="M44 33L48 42L58 43L50 50L52 60L44 55L36 60L38 50L30 43L40 42L44 33Z" fill="#FFF6B3"/>
+    <text font-family="DejaVu Sans" x="80" y="42" class="nodeTitle" font-size="21" fill="#FFFFFF">GAME DEV</text>
+    <text font-family="DejaVu Sans" x="80" y="67" class="nodeMeta" font-size="14" fill="#FFDB63">NEXT QUEST</text>
+  </g>
+
+  <g transform="translate(340 218)">
+    <rect width="280" height="110" rx="26" fill="#112B52" stroke="#67F3FF" stroke-width="3"/>
+    <text font-family="DejaVu Sans" x="140" y="48" text-anchor="middle" class="nodeTitle" font-size="22" fill="#FFFFFF">FOUNDATIONS</text>
+    <text font-family="DejaVu Sans" x="140" y="76" text-anchor="middle" class="nodeMeta" font-size="15" fill="#75F1FF">ACTIVE PATH</text>
+  </g>
+
+  <g transform="translate(95 410)">
+    <rect width="270" height="110" rx="25" fill="#2B203F" stroke="url(#coral)" stroke-width="3"/>
+    <circle cx="40" cy="55" r="17" fill="#FF9C62"/><text font-family="DejaVu Sans" x="40" y="62" text-anchor="middle" class="nodeTitle" font-size="19" fill="#271536">J</text>
+    <text font-family="DejaVu Sans" x="75" y="46" class="nodeTitle" font-size="21" fill="#FFFFFF">JAVA</text>
+    <text font-family="DejaVu Sans" x="75" y="75" class="nodeMeta" font-size="14" fill="#FFB17A">LEVEL 01 / LEARNING</text>
+  </g>
+
+  <g transform="translate(595 410)">
+    <rect width="270" height="110" rx="25" fill="#152850" stroke="url(#cyan)" stroke-width="3"/>
+    <circle cx="40" cy="55" r="17" fill="#FFE064"/><text font-family="DejaVu Sans" x="40" y="62" text-anchor="middle" class="nodeTitle" font-size="18" fill="#42321A">WEB</text>
+    <text font-family="DejaVu Sans" x="75" y="46" class="nodeTitle" font-size="21" fill="#FFFFFF">WEB STACK</text>
+    <text font-family="DejaVu Sans" x="75" y="75" class="nodeMeta" font-size="14" fill="#75F1FF">ACTIVE PATH</text>
+  </g>
+
+  <g transform="translate(105 560)">
+    <rect width="250" height="70" rx="20" fill="#102242" stroke="#FF9A67" stroke-width="2"/>
+    <text font-family="DejaVu Sans" x="125" y="31" text-anchor="middle" class="nodeTitle" font-size="18" fill="#FFFFFF">HTML</text>
+    <text font-family="DejaVu Sans" x="125" y="53" text-anchor="middle" class="nodeMeta" font-size="13" fill="#FFB078">LEVEL 03 / PRACTICING</text>
+  </g>
+
+  <g transform="translate(465 560)">
+    <rect width="250" height="70" rx="20" fill="#102242" stroke="#FFCA45" stroke-width="2"/>
+    <text font-family="DejaVu Sans" x="125" y="31" text-anchor="middle" class="nodeTitle" font-size="18" fill="#FFFFFF">CSS</text>
+    <text font-family="DejaVu Sans" x="125" y="53" text-anchor="middle" class="nodeMeta" font-size="13" fill="#FFDB63">LEVEL 02 / LEARNING</text>
+  </g>
+
+  <g class="unlock" transform="translate(745 560)">
+    <rect width="170" height="70" rx="20" fill="#0C1730" stroke="#587099" stroke-width="2" stroke-dasharray="6 5"/>
+    <text font-family="DejaVu Sans" x="85" y="31" text-anchor="middle" class="nodeTitle" font-size="18" fill="#A8B8D4">JAVASCRIPT</text>
+    <text font-family="DejaVu Sans" x="85" y="53" text-anchor="middle" class="nodeMeta" font-size="12" fill="#8295B8">LEVEL 01 / LEARNING</text>
+  </g>
+
+  <text font-family="DejaVu Sans" x="48" y="644" class="nodeMeta" font-size="12" fill="#8BA7D1">NODES UNLOCK AS THE JOURNEY CONTINUES</text>
+</svg>

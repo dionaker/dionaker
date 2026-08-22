@@ -1,0 +1,48 @@
+<svg width="960" height="360" viewBox="0 0 960 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Giovanni next level</title>
+  <desc id="desc">Progressão de Giovanni: Student Developer no nível 01 rumo a Game Developer no nível 02.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#0B1D3D"/><stop offset="1" stop-color="#21133F"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFBF45"/><stop offset="1" stop-color="#FF6481"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 3px; }
+      .title { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: 2px; }
+      .meta { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
+      @keyframes travel { 0%,100% { transform: translateX(0); } 50% { transform: translateX(390px); } }
+      @keyframes pulse { 0%,100% { opacity: .65; transform: scale(1); } 50% { opacity: 1; transform: scale(1.13); } }
+      .traveler { animation: travel 5s ease-in-out infinite; }
+      .pulse { animation: pulse 2.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    </style>
+  </defs>
+
+  <rect width="960" height="360" rx="32" fill="url(#bg)" stroke="#4776B8" stroke-width="2"/>
+  <g opacity=".13" stroke="#74DFFF"><path d="M40 100H920M40 180H920M40 260H920"/><path d="M160 0V360M320 0V360M480 0V360M640 0V360M800 0V360"/></g>
+  <text font-family="DejaVu Sans" x="45" y="49" class="label" font-size="21" fill="#F7FAFF">NEXT LEVEL</text>
+  <text font-family="DejaVu Sans" x="915" y="49" text-anchor="end" class="meta" font-size="14" fill="#75F1FF">ROADMAP / LOADING</text>
+
+  <g transform="translate(55 92)">
+    <rect width="235" height="175" rx="24" fill="#192D59" stroke="#FFCF4C" stroke-width="3"/>
+    <text font-family="DejaVu Sans" x="28" y="37" class="label" font-size="13" fill="#FFDC68">CURRENT</text>
+    <text font-family="DejaVu Sans" x="28" y="82" class="title" font-size="31" fill="#FFFFFF">LV. 01</text>
+    <text font-family="DejaVu Sans" x="28" y="116" class="title" font-size="21" fill="#FFB67A">STUDENT</text>
+    <text font-family="DejaVu Sans" x="28" y="143" class="meta" font-size="16" fill="#B6D1F5">DEVELOPER</text>
+    <circle class="pulse" cx="195" cy="137" r="12" fill="#65F4A5" filter="url(#glow)"/>
+  </g>
+
+  <g transform="translate(670 92)">
+    <rect width="235" height="175" rx="24" fill="#2C1F48" stroke="#FF687F" stroke-width="3"/>
+    <text font-family="DejaVu Sans" x="28" y="37" class="label" font-size="13" fill="#FF9AA9">TARGET</text>
+    <text font-family="DejaVu Sans" x="28" y="82" class="title" font-size="31" fill="#FFFFFF">LV. 02</text>
+    <text font-family="DejaVu Sans" x="28" y="116" class="title" font-size="21" fill="#FFCF4C">GAME</text>
+    <text font-family="DejaVu Sans" x="28" y="143" class="meta" font-size="16" fill="#FFB6C0">DEVELOPER</text>
+    <path d="M190 119L202 131L190 143" stroke="#FFCF4C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <path d="M325 178H640" stroke="#41678F" stroke-width="12" stroke-linecap="round" stroke-dasharray="12 18"/>
+  <path d="M325 178H475" stroke="url(#road)" stroke-width="12" stroke-linecap="round"/>
+  <g class="traveler"><circle cx="325" cy="178" r="13" fill="#FFCF4C" stroke="#FFF3A8" stroke-width="3" filter="url(#glow)"/><path d="M325 168L328 175L336 176L330 181L332 189L325 185L318 189L320 181L314 176L322 175L325 168Z" fill="#FFF8B8"/></g>
+  <text font-family="DejaVu Sans" x="480" y="146" text-anchor="middle" class="label" font-size="13" fill="#75F1FF">EVOLUTION PATH</text>
+
+  <g transform="translate(55 300)"><text font-family="DejaVu Sans" x="0" y="0" class="meta" font-size="14" fill="#A8C2E8">STUDENT</text><text font-family="DejaVu Sans" x="190" y="0" class="meta" font-size="14" fill="#A8C2E8">WEB FOUNDATIONS</text><text font-family="DejaVu Sans" x="420" y="0" class="meta" font-size="14" fill="#A8C2E8">PROGRAMMING</text><text font-family="DejaVu Sans" x="650" y="0" class="meta" font-size="14" fill="#FFCF4C">GAME DEV</text></g>
+</svg>
