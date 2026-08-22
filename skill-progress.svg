@@ -1,0 +1,66 @@
+<svg width="900" height="410" viewBox="0 0 900 410" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Giovanni skill progress</title>
+  <desc id="desc">Progresso de aprendizado: HTML 80 por cento, CSS 30 por cento, JavaScript 20 por cento e Java 45 por cento.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1D3D"/>
+      <stop offset="1" stop-color="#17113A"/>
+    </linearGradient>
+    <linearGradient id="html" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF944D"/><stop offset="1" stop-color="#FF5C7A"/></linearGradient>
+    <linearGradient id="css" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5C9DFF"/><stop offset="1" stop-color="#8B6DFF"/></linearGradient>
+    <linearGradient id="js" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFE36E"/><stop offset="1" stop-color="#FFB62E"/></linearGradient>
+    <linearGradient id="java" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF6F91"/><stop offset="1" stop-color="#FF3E58"/></linearGradient>
+    <filter id="glow" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .label { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 800; letter-spacing: 2px; }
+      .small { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; font-weight: 700; letter-spacing: 1px; }
+      @keyframes fillHtml { from { width: 0; } to { width: 600px; } }
+      @keyframes fillCss { from { width: 0; } to { width: 225px; } }
+      @keyframes fillJs { from { width: 0; } to { width: 150px; } }
+      @keyframes fillJava { from { width: 0; } to { width: 337.5px; } }
+      @keyframes pulse { 0%,100% { opacity: .72; } 50% { opacity: 1; } }
+      .barHtml { animation: fillHtml 2.4s cubic-bezier(.2,.8,.2,1) forwards; }
+      .barCss { animation: fillCss 2.4s .15s cubic-bezier(.2,.8,.2,1) forwards; }
+      .barJs { animation: fillJs 2.4s .3s cubic-bezier(.2,.8,.2,1) forwards; }
+      .barJava { animation: fillJava 2.4s .45s cubic-bezier(.2,.8,.2,1) forwards; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="900" height="410" rx="28" fill="url(#bg)" stroke="#4776B8" stroke-width="2"/>
+  <path d="M38 74H862" stroke="#5EDAF4" stroke-opacity=".18" stroke-dasharray="3 10"/>
+  <text font-family="DejaVu Sans" x="45" y="47" class="label" font-size="19" fill="#F8FBFF">SKILL TREE / CURRENT PROGRESS</text>
+  <text font-family="DejaVu Sans" x="855" y="47" text-anchor="end" class="small" font-size="13" fill="#72F4FF">LEVELING UP</text>
+
+  <g transform="translate(45 105)">
+    <text font-family="DejaVu Sans" y="0" class="label" font-size="15" fill="#FFFFFF">HTML</text>
+    <text font-family="DejaVu Sans" x="810" y="0" text-anchor="end" class="small" font-size="15" fill="#FFAD77">80%</text>
+    <rect y="22" width="810" height="27" rx="13.5" fill="#07142C" stroke="#2D5589"/>
+    <rect class="barHtml" y="22" width="0" height="27" rx="13.5" fill="url(#html)" filter="url(#glow)"/>
+    <circle class="pulse" cx="600" cy="35.5" r="4" fill="#FFF1C3"/>
+  </g>
+
+  <g transform="translate(45 175)">
+    <text font-family="DejaVu Sans" y="0" class="label" font-size="15" fill="#FFFFFF">CSS</text>
+    <text font-family="DejaVu Sans" x="810" y="0" text-anchor="end" class="small" font-size="15" fill="#9DBDFF">30%</text>
+    <rect y="22" width="810" height="27" rx="13.5" fill="#07142C" stroke="#2D5589"/>
+    <rect class="barCss" y="22" width="0" height="27" rx="13.5" fill="url(#css)" filter="url(#glow)"/>
+    <circle class="pulse" cx="225" cy="35.5" r="4" fill="#E1E8FF"/>
+  </g>
+
+  <g transform="translate(45 245)">
+    <text font-family="DejaVu Sans" y="0" class="label" font-size="15" fill="#FFFFFF">JAVASCRIPT</text>
+    <text font-family="DejaVu Sans" x="810" y="0" text-anchor="end" class="small" font-size="15" fill="#FFE88C">20%</text>
+    <rect y="22" width="810" height="27" rx="13.5" fill="#07142C" stroke="#2D5589"/>
+    <rect class="barJs" y="22" width="0" height="27" rx="13.5" fill="url(#js)" filter="url(#glow)"/>
+    <circle class="pulse" cx="150" cy="35.5" r="4" fill="#FFF7C5"/>
+  </g>
+
+  <g transform="translate(45 315)">
+    <text font-family="DejaVu Sans" y="0" class="label" font-size="15" fill="#FFFFFF">JAVA</text>
+    <text font-family="DejaVu Sans" x="810" y="0" text-anchor="end" class="small" font-size="15" fill="#FF91AA">45%</text>
+    <rect y="22" width="810" height="27" rx="13.5" fill="#07142C" stroke="#2D5589"/>
+    <rect class="barJava" y="22" width="0" height="27" rx="13.5" fill="url(#java)" filter="url(#glow)"/>
+    <circle class="pulse" cx="337.5" cy="35.5" r="4" fill="#FFE0E7"/>
+  </g>
+</svg>
