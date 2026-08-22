@@ -10,17 +10,12 @@
 
 
 
-## > PLAYER PROFILE
+## > DEV PROFILE
 
 
 
 
 Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em formação. Estou construindo minha base em desenvolvimento web com **HTML e CSS**, evoluindo em **Java e JavaScript** e explorando o caminho até o **desenvolvimento de jogos**.
-
-
-
-
-> **Status:** aprendendo construindo. Cada projeto é uma nova partida; cada habilidade desbloqueada abre o próximo caminho.
 
 
 
@@ -73,7 +68,7 @@ Eu sou o **Giovanni**, aluno da **ETEC pelo programa AMS** e desenvolvedor em fo
 
 
 
-## > PLAYER STATS
+## > DEV STATS
 
 
 
